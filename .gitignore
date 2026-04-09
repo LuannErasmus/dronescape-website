@@ -13,7 +13,6 @@ node_modules/
 .env.production.local
 
 # large media — add these to public/ manually on each machine
-public/hero-video.mp4
 public/why-us-photo.jpg
 
 # misc

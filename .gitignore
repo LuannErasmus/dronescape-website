@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# next.js build output
+/.next/
+/out/
+
+# env files — never commit these (contain API keys)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# large media — add these to public/ manually on each machine
+public/hero-video.mp4
+public/why-us-photo.jpg
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+.claude/
+.vscode/

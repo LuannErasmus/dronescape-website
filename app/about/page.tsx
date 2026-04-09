@@ -36,14 +36,6 @@ const values = [
   },
 ]
 
-const milestones = [
-  { year: '2011', event: 'DroneScape founded by Marcus Avery with a single DJI Phantom.' },
-  { year: '2014', event: 'Expanded to a team of 5 pilots and secured our first commercial inspection contract.' },
-  { year: '2017', event: 'Launched AgriScan division. First multispectral mapping programme for a Fortune 500 agriculture client.' },
-  { year: '2019', event: 'Reached 200 completed projects milestone. Featured in Forbes as a top drone-tech company.' },
-  { year: '2021', event: 'Introduced thermal search-and-rescue capabilities. Partnership with LA County Emergency Management.' },
-  { year: '2024', event: '500+ projects, 50 certified pilots, operating in 12 US states.' },
-]
 
 export default function AboutPage() {
   return (

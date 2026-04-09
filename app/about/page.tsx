@@ -96,35 +96,8 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-
-            {/* Timeline */}
-            <div className="relative">
-              <div className="space-y-0">
-                {milestones.map(({ year, event }, i) => (
-                  <div key={year} className="flex gap-5 group">
-                    {/* Timeline spine */}
-                    <div className="flex flex-col items-center">
-                      <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 font-bold text-xs
-                        ${i === milestones.length - 1
-                          ? 'bg-[#f5981a] text-white'
-                          : 'bg-[#1f2e4d]/10 text-[#1f2e4d] group-hover:bg-[#f5981a] group-hover:text-white transition-colors duration-200'
-                        }`}>
-                        {year.slice(2)}
-                      </div>
-                      {i < milestones.length - 1 && (
-                        <div className="w-px flex-1 bg-gray-200 my-1" />
-                      )}
-                    </div>
-                    {/* Event text */}
-                    <div className="pb-8">
-                      <p className="text-[#f5981a] font-bold text-sm mb-0.5">{year}</p>
-                      <p className="text-gray-500 text-sm leading-relaxed">{event}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
+            
         </div>
       </section>
 

@@ -63,7 +63,7 @@ export default function AboutPage() {
             <div>
               <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-3">Our Origin</p>
               <h2 className="text-4xl font-extrabold text-[#1f2e4d] mb-6 tracking-tight">
-                The Sky’s the Limit
+                The Sky&apos;s the Limit
               </h2>
               <div className="space-y-4 text-gray-500 leading-relaxed">
                 <p>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                   We specialise in a wide range of drone services, from high-quality aerial photography and videography to precision agriculture and crop spraying. Our capabilities also include yardage and green book mapping, turf health monitoring, solar panel and roof inspections, as well as detailed aerial surveying and land analysis. Each service is designed to help clients gain a clearer, more informed understanding of their environment.
                 </p>
                 <p>
-                  We work with farmers, property developers, estate managers, and businesses looking to improve performance, reduce inefficiencies, and elevate their operations. Whether it’s identifying crop stress, enhancing turf quality, or capturing high-impact visuals, Dronescape provides the tools and insights needed to make smarter decisions.
+                  We work with farmers, property developers, estate managers, and businesses looking to improve performance, reduce inefficiencies, and elevate their operations. Whether it&apos;s identifying crop stress, enhancing turf quality, or capturing high-impact visuals, Dronescape provides the tools and insights needed to make smarter decisions.
                 </p>
                 <p>
                   While we are proudly based in the Western Cape, our services extend across South Africa. We are committed to delivering consistent, high-quality results wherever our clients operate.
@@ -90,6 +90,7 @@ export default function AboutPage() {
             {/* Photo */}
             <div className="relative">
               <div className="rounded-3xl overflow-hidden aspect-square bg-gradient-to-br from-[#1f2e4d] to-[#0d1626]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/about-photo.jpg"
                   alt="DroneScape team"

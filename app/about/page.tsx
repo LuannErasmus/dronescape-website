@@ -49,9 +49,7 @@ export default function AboutPage() {
             About DroneScape
           </h1>
           <p className="text-white/60 text-xl max-w-3xl mx-auto leading-relaxed">
-            Born from a passion for aviation and visual storytelling, DroneScape has grown
-            from a single drone into a full-service aerial intelligence company trusted by
-            hundreds of clients across the United States.
+            Delivering efficient, high-quality drone solutions that enhance operations, improve insights, and create real value for every client we serve.
           </p>
         </div>
       </section>
@@ -65,7 +63,7 @@ export default function AboutPage() {
             <div>
               <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-3">Our Origin</p>
               <h2 className="text-4xl font-extrabold text-[#1f2e4d] mb-6 tracking-tight">
-                The Sky's the Limit
+                The Sky’s the Limit
               </h2>
               <div className="space-y-4 text-gray-500 leading-relaxed">
                 <p>
@@ -86,6 +84,17 @@ export default function AboutPage() {
                 <p>
                   At our core, we are driven by quality, professionalism, and a commitment to helping our clients achieve better outcomes through innovative aerial technology.
                 </p>
+              </div>
+            </div>
+
+            {/* Photo */}
+            <div className="relative">
+              <div className="rounded-3xl overflow-hidden aspect-square bg-gradient-to-br from-[#1f2e4d] to-[#0d1626]">
+                <img
+                  src="/about-photo.jpg"
+                  alt="DroneScape team"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

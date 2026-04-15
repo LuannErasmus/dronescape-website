@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/usr/local/bin/node /usr/local/bin/npm install)",
+      "Bash(grep -rn '#1f2e4d\\\\|#0d1626\\\\|#162240\\\\|--navy' app/page.tsx app/about/page.tsx app/services/page.tsx app/contact/page.tsx app/globals.css components/Footer.tsx components/Navbar.tsx components/ContactForm.tsx app/api/contact/route.ts)",
+      "Bash(echo \"Exit code: $?\")"
+    ]
+  }
+}

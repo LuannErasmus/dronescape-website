@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Marquee from '../components/Marquee'
 import {
   CameraIcon,
   FlagIcon, SproutIcon, DropletIcon, EyeIcon, SunIcon, MapPlusIcon, HouseIcon
@@ -8,35 +7,6 @@ import {
 
 export const metadata: Metadata = {
   title: 'DroneScape',
-}
-
-/* ─────────────────────────────────────────────
-   Marquee items — text + small inline icon
-───────────────────────────────────────────── */
-const marqueeItems = [
-  { text: 'Site progress monitoring',          icon: () => <MarqueeDot /> },
-  { text: '3D Mapping & Surveying',                       icon: () => <MarqueeDot /> },
-  { text: 'Volumetric Measurements',                 icon: () => <MarqueeDot /> },
-  { text: 'Aerial Property Photography',                  icon: () => <MarqueeDot /> },
-  { text: 'Cinematic Property Videography',                          icon: () => <MarqueeDot /> },
-  { text: 'Crop & Land Analysis',                icon: () => <MarqueeDot /> },
-  { text: 'Forestry Monitoring & Management',                icon: () => <MarqueeDot /> },
-  { text: 'Search & Rescue Support',         icon: () => <MarqueeDot /> },
-  { text: 'Roof & Infrastructure Inspections',        icon: () => <MarqueeDot /> },
-  { text: 'Power Line & Utility Inspections',    icon: () => <MarqueeDot /> },
-  { text: 'Aerial Cinematography & Content Creation',    icon: () => <MarqueeDot /> },
-]
-
-/* Tiny helpers used only inside marqueeItems */
-function MarqueeDot() {
-  return <span className="text-[#1a5631] text-base leading-none select-none">✦</span>
-}
-function MarqueeIcon({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#1a5631]/15 border border-[#1a5631]/25">
-      {children}
-    </span>
-  )
 }
 
 /* ─────────────────────────────────────────────
@@ -128,14 +98,12 @@ export default function HomePage() {
       {/* ══════════════════ HERO ══════════════════ */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
-        {/* Background video */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        {/* Background image — drop hero-bg.jpg (or .mp4 for video) into /public */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/hero-bg.jpg"
+          alt=""
           className="absolute inset-0 w-full h-full object-cover"
-          src="/hero-video.mp4"
         />
 
         {/* Dark overlay so text stays readable over the video */}
@@ -193,19 +161,6 @@ export default function HomePage() {
       
       </section>
 
-      {/* ══════════════════ MARQUEE ══════════════════ */}
-      <section className="bg-[#f5981a] py-4 select-none">
-        <Marquee speed={40} gap={2.5}>
-          {marqueeItems.map(({ text, icon: Icon }, i) => (
-            <div key={i} className="flex items-center gap-2.5 shrink-0">
-              <span className="text-[#1a5631] text-sm font-semibold uppercase tracking-widest whitespace-nowrap">
-                {text}
-              </span>
-              <Icon />
-            </div>
-          ))}
-        </Marquee>
-      </section>
 
 
 

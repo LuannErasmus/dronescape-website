@@ -190,14 +190,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-0 right-0 flex flex-col items-center gap-2 animate-bounce">
-          <span className="text-white/30 text-xs tracking-widest uppercase">Scroll</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" strokeWidth="2">
-            <line x1="12" y1="5" x2="12" y2="19"/>
-            <polyline points="19 12 12 19 5 12"/>
-          </svg>
-        </div>
+      
       </section>
 
       {/* ══════════════════ MARQUEE ══════════════════ */}

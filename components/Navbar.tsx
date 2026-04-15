@@ -36,21 +36,21 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex items-center justify-between h-20">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-20">
 
-          {/* ── Logo ── */}
-            <Link href="/" className="flex items-center shrink-0">
-              <Image
-                src="/logo.png"   // make sure your file is named exactly this
-                alt="DroneScape Logo"
-                width={160}
-                height={50}
-                className="h-12 w-auto"
-                priority
-              />
-            </Link>
+          {/* ── Logo (left) ── */}
+          <Link href="/" className="flex items-center shrink-0">
+            <Image
+              src="/footerlogo.png"
+              alt="DroneScape Logo"
+              width={160}
+              height={50}
+              className="h-10 w-auto"
+              priority
+            />
+          </Link>
 
-          {/* ── Desktop nav ── */}
+          {/* ── Desktop nav (centre) ── */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map(({ href, label }) => (
               <Link
@@ -67,22 +67,22 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* ── CTA button (desktop) ── */}
-          <Link
-            href="/contact"
-            className="hidden md:inline-flex items-center gap-2 bg-[#f5981a] hover:bg-[#e8880a] text-white text-sm font-semibold px-6 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/30 active:scale-95"
-          >
-            Get a Quote
-          </Link>
-
-          {/* ── Hamburger (mobile) ── */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
-            className="md:hidden text-white p-2 -mr-2"
-          >
-            {mobileOpen ? <CloseIcon /> : <BurgerIcon />}
-          </button>
+          {/* ── CTA + hamburger (right) ── */}
+          <div className="flex items-center justify-end">
+            <Link
+              href="/contact"
+              className="hidden md:inline-flex items-center gap-2 bg-[#f5981a] hover:bg-[#e8880a] text-white text-sm font-semibold px-6 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/30 active:scale-95"
+            >
+              Get a Quote
+            </Link>
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+              className="md:hidden text-white p-2 -mr-2"
+            >
+              {mobileOpen ? <CloseIcon /> : <BurgerIcon />}
+            </button>
+          </div>
         </div>
       </div>
 

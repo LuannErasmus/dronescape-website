@@ -26,6 +26,7 @@ body {
   color: #1f2e4d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* ── Animations ── */

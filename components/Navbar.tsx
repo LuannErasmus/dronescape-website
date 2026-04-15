@@ -36,16 +36,16 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-20">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-24">
 
           {/* ── Logo (left) ── */}
           <Link href="/" className="flex items-center shrink-0">
             <Image
               src="/footerlogo.png"
               alt="DroneScape Logo"
-              width={160}
-              height={50}
-              className="h-10 w-auto"
+              width={240}
+              height={80}
+              className="h-16 w-auto"
               priority
             />
           </Link>

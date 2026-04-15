@@ -36,7 +36,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-24">
+        <div className="flex items-center justify-between md:grid md:grid-cols-[1fr_auto_1fr] h-16 md:h-24">
 
           {/* ── Logo (left) ── */}
           <Link href="/" className="flex items-center shrink-0">
@@ -45,7 +45,7 @@ export default function Navbar() {
               alt="DroneScape Logo"
               width={240}
               height={80}
-              className="h-16 w-auto"
+              className="h-10 md:h-16 w-auto"
               priority
             />
           </Link>

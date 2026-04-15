@@ -59,7 +59,7 @@ export default function ContactForm() {
             <polyline points="20 6 9 17 4 12"/>
           </svg>
         </div>
-        <h3 className="text-2xl font-extrabold text-[#1f2e4d]">Message Received!</h3>
+        <h3 className="text-2xl font-extrabold text-[#1a5631]">Message Received!</h3>
         <p className="text-gray-500 max-w-sm">
           Thank you, <strong>{form.name}</strong>. We&apos;ll review your enquiry and
           get back to you at <strong>{form.email}</strong>
@@ -200,7 +200,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={formState === 'submitting'}
-        className="w-full bg-[#1f2e4d] hover:bg-[#f5981a] text-white font-bold py-4 rounded-xl transition-all duration-200 hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+        className="w-full bg-[#1a5631] hover:bg-[#f5981a] text-white font-bold py-4 rounded-xl transition-all duration-200 hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-3"
       >
         {formState === 'submitting' ? (
           <>

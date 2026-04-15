@@ -31,8 +31,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#1f2e4d]/95 backdrop-blur-md shadow-lg shadow-black/20'
-          : 'bg-[#1f2e4d]/80 backdrop-blur-sm'
+          ? 'bg-white/95 backdrop-blur-md shadow-sm'
+          : 'bg-white/90 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -59,7 +59,7 @@ export default function Navbar() {
                 className={`nav-link text-sm font-medium tracking-wide transition-colors duration-200 ${
                   pathname === href
                     ? 'text-[#f5981a] active'
-                    : 'text-white/75 hover:text-white'
+                    : 'text-[#1a5631]/80 hover:text-[#1a5631]'
                 }`}
               >
                 {label}
@@ -78,7 +78,7 @@ export default function Navbar() {
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
-              className="md:hidden text-white p-2 -mr-2"
+              className="md:hidden text-[#1a5631] p-2 -mr-2"
             >
               {mobileOpen ? <CloseIcon /> : <BurgerIcon />}
             </button>
@@ -92,13 +92,13 @@ export default function Navbar() {
           mobileOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-[#1a2641] border-t border-white/10 px-6 py-6 space-y-1">
+        <div className="bg-white border-t border-gray-100 px-6 py-6 space-y-1">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               className={`block py-3 text-base font-medium border-b border-white/5 transition-colors duration-150 ${
-                pathname === href ? 'text-[#f5981a]' : 'text-white/80 hover:text-white'
+                pathname === href ? 'text-[#f5981a]' : 'text-[#1a5631]/80 hover:text-[#1a5631]'
               }`}
             >
               {label}

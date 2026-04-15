@@ -41,7 +41,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative pt-40 pb-28 overflow-hidden bg-gradient-to-br from-[#0d1626] via-[#1f2e4d] to-[#0d1626]">
+      <section className="relative pt-40 pb-28 overflow-hidden bg-gradient-to-br from-[#0f2e1a] via-[#1a5631] to-[#0f2e1a]">
         <div className="absolute inset-0 hero-grid opacity-30" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 text-center">
           <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Our Story</p>
@@ -62,7 +62,7 @@ export default function AboutPage() {
             {/* Story text */}
             <div>
               <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-3">Our Origin</p>
-              <h2 className="text-4xl font-extrabold text-[#1f2e4d] mb-6 tracking-tight">
+              <h2 className="text-4xl font-extrabold text-[#1a5631] mb-6 tracking-tight">
                 The Sky&apos;s the Limit
               </h2>
               <div className="space-y-4 text-gray-500 leading-relaxed">
@@ -89,7 +89,7 @@ export default function AboutPage() {
 
             {/* Photo */}
             <div className="relative">
-              <div className="rounded-3xl overflow-hidden aspect-square bg-gradient-to-br from-[#1f2e4d] to-[#0d1626]">
+              <div className="rounded-3xl overflow-hidden aspect-square bg-gradient-to-br from-[#1a5631] to-[#0f2e1a]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/about-photo.jpg"
@@ -104,7 +104,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Mission ── */}
-      <section className="section-padding bg-[#1f2e4d]">
+      <section className="section-padding bg-[#1a5631]">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Our Purpose</p>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-white mb-8 tracking-tight leading-tight">
@@ -123,7 +123,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-3">What Drives Us</p>
-            <h2 className="text-4xl font-extrabold text-[#1f2e4d] tracking-tight">Our Core Values</h2>
+            <h2 className="text-4xl font-extrabold text-[#1a5631] tracking-tight">Our Core Values</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map(({ title, description, icon: Icon }) => (
@@ -132,7 +132,7 @@ export default function AboutPage() {
                   <Icon />
                 </div>
                 <div>
-                  <h3 className="text-[#1f2e4d] font-bold text-lg mb-2">{title}</h3>
+                  <h3 className="text-[#1a5631] font-bold text-lg mb-2">{title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function AboutPage() {
 
 
       {/* ── CTA ── */}
-      <section className="bg-gradient-to-r from-[#1f2e4d] to-[#0d1626] section-padding">
+      <section className="bg-gradient-to-r from-[#1a5631] to-[#0f2e1a] section-padding">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-extrabold text-white mb-5 tracking-tight">
             Ready to work with us?

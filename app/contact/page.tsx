@@ -39,7 +39,7 @@ export default function ContactPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative pt-40 pb-24 overflow-hidden bg-gradient-to-br from-[#0d1626] via-[#1f2e4d] to-[#0d1626]">
+      <section className="relative pt-40 pb-24 overflow-hidden bg-gradient-to-br from-[#0f2e1a] via-[#1a5631] to-[#0f2e1a]">
         <div className="absolute inset-0 hero-grid opacity-30" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 text-center">
           <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Let&apos;s Connect</p>
@@ -61,7 +61,7 @@ export default function ContactPage() {
             {/* ── Contact Form (wider col) ── */}
             <div className="lg:col-span-3">
               <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-10">
-                <h2 className="text-2xl font-extrabold text-[#1f2e4d] mb-2">Send Us a Message</h2>
+                <h2 className="text-2xl font-extrabold text-[#1a5631] mb-2">Send Us a Message</h2>
                 <p className="text-gray-500 text-sm mb-8">
                   We respond to every enquiry within one business day.
                 </p>
@@ -85,12 +85,12 @@ export default function ContactPage() {
                         href={href}
                         target={href.startsWith('http') ? '_blank' : undefined}
                         rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="text-[#1f2e4d] font-medium text-sm hover:text-[#f5981a] transition-colors duration-200 whitespace-pre-line"
+                        className="text-[#1a5631] font-medium text-sm hover:text-[#f5981a] transition-colors duration-200 whitespace-pre-line"
                       >
                         {value}
                       </a>
                     ) : (
-                      <p className="text-[#1f2e4d] font-medium text-sm whitespace-pre-line">{value}</p>
+                      <p className="text-[#1a5631] font-medium text-sm whitespace-pre-line">{value}</p>
                     )}
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-3">Quick Answers</p>
-            <h2 className="text-3xl font-extrabold text-[#1f2e4d] tracking-tight">Frequently Asked</h2>
+            <h2 className="text-3xl font-extrabold text-[#1a5631] tracking-tight">Frequently Asked</h2>
           </div>
           <div className="space-y-4">
             {[
@@ -131,7 +131,7 @@ export default function ContactPage() {
                 className="group border border-gray-100 rounded-2xl bg-white overflow-hidden"
               >
                 <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none">
-                  <span className="text-[#1f2e4d] font-semibold text-sm">{q}</span>
+                  <span className="text-[#1a5631] font-semibold text-sm">{q}</span>
                   <svg
                     className="shrink-0 ml-4 text-[#f5981a] transition-transform duration-200 group-open:rotate-45"
                     width="20" height="20" viewBox="0 0 24 24" fill="none"

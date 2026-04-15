@@ -29,11 +29,11 @@ const marqueeItems = [
 
 /* Tiny helpers used only inside marqueeItems */
 function MarqueeDot() {
-  return <span className="text-[#1f2e4d] text-base leading-none select-none">✦</span>
+  return <span className="text-[#1a5631] text-base leading-none select-none">✦</span>
 }
 function MarqueeIcon({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#1f2e4d]/15 border border-[#1f2e4d]/25">
+    <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#1a5631]/15 border border-[#1a5631]/25">
       {children}
     </span>
   )
@@ -49,7 +49,7 @@ const services = [
     title: 'Yardage and Green Book Mapping',
     description: 'Detailed golf course mapping for accurate yardage, strategy, and green contour insights.',
     color: 'from-green-600/20 to-green-800/20',
-    stroke: '#1f2e4d',
+    stroke: '#1a5631',
   },
   {
     id: 'turf-monitoring',
@@ -57,7 +57,7 @@ const services = [
     title: 'Turf health Monitoring and Land Assessment',
     description: 'Uses aerial data to analyze turf condition, stress, and overall land health.',
     color: 'from-lime-500/20 to-lime-700/20',
-    stroke: '#1f2e4d',
+    stroke: '#1a5631',
   },
   {
     id: 'aerial-surveying',
@@ -65,7 +65,7 @@ const services = [
     title: 'Aerial Surveying and Land Mapping',
     description: 'High-resolution aerial data collection for accurate mapping, measurements, and terrain analysis.',
     color: 'from-sky-400/20 to-sky-600/20',
-    stroke: '#1f2e4d',
+    stroke: '#1a5631',
   },
   {
     id: 'agriculture',
@@ -73,7 +73,7 @@ const services = [
     title: 'Precision Agriculture and Crop Spraying',
     description: 'Targeted spraying and monitoring to optimise crop health, yield, and resource efficiency.',
     color: 'from-emerald-500/20 to-emerald-700/20',
-    stroke: '#1f2e4d',
+    stroke: '#1a5631',
   },
   {
     id: 'real-estate',
@@ -81,7 +81,7 @@ const services = [
     title: 'Real Estate and Construction Progress Monitoring',
     description: 'Tracks site development with aerial imagery for reporting, planning, and project management.',
     color: 'from-orange-400/20 to-orange-600/20',
-    stroke: '#1f2e4d',
+    stroke: '#1a5631',
   },
   {
     id: 'security',
@@ -89,7 +89,7 @@ const services = [
     title: 'Search, Security and Surveillance',
     description: 'Provides aerial monitoring for safety, tracking, inspections, and real-time situational awareness.',
     color: 'from-red-400/20 to-red-600/20',
-    stroke: '#1f2e4d',
+    stroke: '#1a5631',
   },
   {
     id: 'photography',
@@ -97,7 +97,7 @@ const services = [
     title: 'Cinematic Photography and Videography',
     description: 'Captures high-quality aerial visuals for marketing, storytelling, and professional media production.',
     color: 'from-purple-400/20 to-purple-600/20',
-    stroke: '#1f2e4d',
+    stroke: '#1a5631',
   },
   {
     id: 'roof-inspections',
@@ -105,7 +105,7 @@ const services = [
     title: 'Solar Panel and Roof Inspections',
     description: 'Inspects panels and roofs for damage, faults, and maintenance needs using aerial imaging.',
     color: 'from-yellow-400/20 to-yellow-600/20',
-    stroke: '#1f2e4d',
+    stroke: '#1a5631',
   },
 ]
 
@@ -139,7 +139,7 @@ export default function HomePage() {
         />
 
         {/* Dark overlay so text stays readable over the video */}
-        <div className="absolute inset-0 bg-[#0d1626]/60" />
+        <div className="absolute inset-0 bg-[#0f2e1a]/60" />
 
         {/* Grid overlay */}
         <div className="absolute inset-0 hero-grid opacity-40" />
@@ -198,7 +198,7 @@ export default function HomePage() {
         <Marquee speed={40} gap={2.5}>
           {marqueeItems.map(({ text, icon: Icon }, i) => (
             <div key={i} className="flex items-center gap-2.5 shrink-0">
-              <span className="text-[#1f2e4d] text-sm font-semibold uppercase tracking-widest whitespace-nowrap">
+              <span className="text-[#1a5631] text-sm font-semibold uppercase tracking-widest whitespace-nowrap">
                 {text}
               </span>
               <Icon />
@@ -216,7 +216,7 @@ export default function HomePage() {
           {/* Section header */}
           <div className="text-center mb-16">
             <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-3">What We Offer</p>
-            <h2 className="text-4xl lg:text-5xl font-extrabold text-[#1f2e4d] mb-5 tracking-tight">
+            <h2 className="text-4xl lg:text-5xl font-extrabold text-[#1a5631] mb-5 tracking-tight">
               Our Services
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
@@ -234,12 +234,12 @@ export default function HomePage() {
                 className="card-lift group bg-white rounded-2xl p-7 border border-gray-100 flex flex-col gap-4 cursor-pointer"
               >
                 {/* Icon bubble */}
-                <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${color} flex items-center justify-center border border-[#1f2e4d]/10 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${color} flex items-center justify-center border border-[#1a5631]/10 group-hover:scale-110 transition-transform duration-300`}>
                   <Icon stroke={stroke} />
                 </div>
 
                 <div>
-                  <h3 className="text-[#1f2e4d] font-bold text-base mb-1.5 group-hover:text-[#f5981a] transition-colors duration-200">
+                  <h3 className="text-[#1a5631] font-bold text-base mb-1.5 group-hover:text-[#f5981a] transition-colors duration-200">
                     {title}
                   </h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
@@ -261,7 +261,7 @@ export default function HomePage() {
           <div className="text-center mt-14">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 bg-[#1f2e4d] hover:bg-[#162240] text-white font-semibold px-10 py-4 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-navy/20"
+              className="inline-flex items-center gap-2 bg-[#1a5631] hover:bg-[#123d25] text-white font-semibold px-10 py-4 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-navy/20"
             >
               View All Services
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -281,7 +281,7 @@ export default function HomePage() {
             {/* Text side */}
             <div>
               <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-3">Why DroneScape</p>
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-[#1f2e4d] mb-6 tracking-tight leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-extrabold text-[#1a5631] mb-6 tracking-tight leading-tight">
                 Precision. Quality.<br />Results.
               </h2>
               <p className="text-gray-500 text-lg leading-relaxed mb-10">
@@ -297,12 +297,12 @@ export default function HomePage() {
                 ].map(({ title, desc }) => (
                   <div key={title} className="flex gap-4">
                     <div className="shrink-0 w-6 h-6 rounded-full bg-[#f5981a]/15 border border-[#f5981a]/30 flex items-center justify-center mt-0.5">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1f2e4d" strokeWidth="3">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a5631" strokeWidth="3">
                         <polyline points="20 6 9 17 4 12"/>
                       </svg>
                     </div>
                     <div>
-                      <p className="text-[#1f2e4d] font-semibold mb-1">{title}</p>
+                      <p className="text-[#1a5631] font-semibold mb-1">{title}</p>
                       <p className="text-gray-500 text-sm leading-relaxed">{desc}</p>
                     </div>
                   </div>
@@ -347,7 +347,7 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════ CTA BANNER ══════════════════ */}
-      <section className="bg-gradient-to-r from-[#1f2e4d] to-[#0d1626] section-padding">
+      <section className="bg-gradient-to-r from-[#1a5631] to-[#0f2e1a] section-padding">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-white mb-6 tracking-tight">
             Ready to take flight?

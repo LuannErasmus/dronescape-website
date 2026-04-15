@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --navy: #1f2e4d;
+  --green: #1a5631;
   --orange: #f5981a;
   --white: #ffffff;
 }
@@ -23,7 +23,7 @@ html {
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: #ffffff;
-  color: #1f2e4d;
+  color: #1a5631;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -94,7 +94,7 @@ body {
 }
 .card-lift:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 60px rgba(31, 46, 77, 0.15);
+  box-shadow: 0 20px 60px rgba(26, 86, 49, 0.15);
 }
 
 /* ── Orange underline on nav links ── */
@@ -121,7 +121,7 @@ body {
 /* ── Scrollbar ── */
 ::-webkit-scrollbar       { width: 6px; }
 ::-webkit-scrollbar-track { background: #f1f1f1; }
-::-webkit-scrollbar-thumb { background: #1f2e4d; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #1a5631; border-radius: 3px; }
 
 /* ── Form input focus ring ── */
 .form-input {
@@ -135,6 +135,6 @@ body {
 
 /* ── Subtle dot pattern ── */
 .dot-pattern {
-  background-image: radial-gradient(rgba(31,46,77,0.06) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(26,86,49,0.06) 1px, transparent 1px);
   background-size: 24px 24px;
 }

@@ -128,7 +128,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* ── Page header ── */}
-      <section className="relative pt-40 pb-24 overflow-hidden bg-gradient-to-br from-[#0d1626] via-[#1f2e4d] to-[#0d1626]">
+      <section className="relative pt-40 pb-24 overflow-hidden bg-gradient-to-br from-[#0f2e1a] via-[#1a5631] to-[#0f2e1a]">
         <div className="absolute inset-0 hero-grid opacity-30" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 text-center">
           <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-4">What We Do</p>
@@ -177,7 +177,7 @@ export default function ServicesPage() {
                   {/* Text content */}
                   <div className={isEven ? 'order-1 lg:order-2' : 'order-1'}>
                     <p className="text-[#f5981a] text-sm font-semibold uppercase tracking-[0.2em] mb-3">Service</p>
-                    <h2 className="text-3xl lg:text-4xl font-extrabold text-[#1f2e4d] mb-4 tracking-tight">
+                    <h2 className="text-3xl lg:text-4xl font-extrabold text-[#1a5631] mb-4 tracking-tight">
                       {title}
                     </h2>
                     <p className="text-gray-500 text-lg leading-relaxed mb-8">{description}</p>
@@ -198,7 +198,7 @@ export default function ServicesPage() {
 
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-2 bg-[#1f2e4d] hover:bg-[#f5981a] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-200"
+                      className="inline-flex items-center gap-2 bg-[#1a5631] hover:bg-[#f5981a] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-200"
                     >
                       Request a Quote
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">

@@ -13,7 +13,7 @@ export async function POST(request: Request) {
       subject: `New enquiry from ${name} — DroneScape`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 32px; background: #f9fafb; border-radius: 12px;">
-          <div style="background: #1f2e4d; border-radius: 8px; padding: 24px; margin-bottom: 24px;">
+          <div style="background: #1a5631; border-radius: 8px; padding: 24px; margin-bottom: 24px;">
             <h1 style="color: #f5981a; margin: 0; font-size: 22px;">New Enquiry — DroneScape</h1>
             <p style="color: rgba(255,255,255,0.6); margin: 8px 0 0; font-size: 14px;">Someone has submitted the contact form on your website.</p>
           </div>
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
                 <span style="font-size: 12px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em;">Name</span>
               </td>
               <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb;">
-                <span style="color: #1f2e4d; font-weight: 600;">${name}</span>
+                <span style="color: #1a5631; font-weight: 600;">${name}</span>
               </td>
             </tr>
             <tr>
@@ -40,7 +40,7 @@ export async function POST(request: Request) {
                 <span style="font-size: 12px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em;">Phone</span>
               </td>
               <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb;">
-                <span style="color: #1f2e4d;">${phone || '—'}</span>
+                <span style="color: #1a5631;">${phone || '—'}</span>
               </td>
             </tr>
             <tr>
@@ -48,7 +48,7 @@ export async function POST(request: Request) {
                 <span style="font-size: 12px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em;">Company</span>
               </td>
               <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb;">
-                <span style="color: #1f2e4d;">${company || '—'}</span>
+                <span style="color: #1a5631;">${company || '—'}</span>
               </td>
             </tr>
             <tr>
@@ -56,7 +56,7 @@ export async function POST(request: Request) {
                 <span style="font-size: 12px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em;">Service</span>
               </td>
               <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb;">
-                <span style="color: #1f2e4d;">${service || '—'}</span>
+                <span style="color: #1a5631;">${service || '—'}</span>
               </td>
             </tr>
           </table>

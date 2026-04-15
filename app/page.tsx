@@ -52,6 +52,7 @@ const services = [
     description: 'Tracks site development with aerial imagery for reporting, planning, and project management.',
     color: 'from-orange-400/20 to-orange-600/20',
     stroke: '#1a5631',
+    hideMobile: true,
   },
   {
     id: 'security',
@@ -60,6 +61,7 @@ const services = [
     description: 'Provides aerial monitoring for safety, tracking, inspections, and real-time situational awareness.',
     color: 'from-red-400/20 to-red-600/20',
     stroke: '#1a5631',
+    hideMobile: true,
   },
   {
     id: 'photography',
@@ -68,6 +70,7 @@ const services = [
     description: 'Captures high-quality aerial visuals for marketing, storytelling, and professional media production.',
     color: 'from-purple-400/20 to-purple-600/20',
     stroke: '#1a5631',
+    hideMobile: true,
   },
   {
     id: 'roof-inspections',
@@ -76,6 +79,7 @@ const services = [
     description: 'Inspects panels and roofs for damage, faults, and maintenance needs using aerial imaging.',
     color: 'from-yellow-400/20 to-yellow-600/20',
     stroke: '#1a5631',
+    hideMobile: true,
   },
 ]
 
@@ -182,11 +186,11 @@ export default function HomePage() {
 
           {/* 8-card grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map(({ id, icon: Icon, title, description, color, stroke }) => (
+            {services.map(({ id, icon: Icon, title, description, color, stroke, hideMobile }) => (
               <Link
                 key={id}
                 href={`/services#${id}`}
-                className="card-lift group bg-white rounded-2xl p-7 border border-gray-100 flex flex-col gap-4 cursor-pointer"
+                className={`card-lift group bg-white rounded-2xl p-7 border border-gray-100 flex flex-col gap-4 cursor-pointer ${hideMobile ? 'hidden sm:flex' : ''}`}
               >
                 {/* Icon bubble */}
                 <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${color} flex items-center justify-center border border-[#1a5631]/10 group-hover:scale-110 transition-transform duration-300`}>

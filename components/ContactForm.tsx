@@ -182,7 +182,7 @@ export default function ContactForm() {
       {/* Privacy note */}
       <p className="text-xs text-gray-400 leading-relaxed">
         By submitting this form you agree to our{' '}
-        <a href="#" className="underline underline-offset-2 hover:text-[#f5981a] transition-colors">Privacy Policy</a>.
+        <a href="/privacy" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#f5981a] transition-colors">Privacy Policy</a>.
         We never share your information with third parties.
       </p>
 

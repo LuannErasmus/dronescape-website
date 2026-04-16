@@ -24,6 +24,10 @@ export const metadata: Metadata = {
     'infrastructure inspection',
     'real estate drone',
   ],
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     title: 'DroneScape — Premium Drone Services',
     description: 'Elevate your perspective with professional drone services.',
